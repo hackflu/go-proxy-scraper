@@ -33,13 +33,7 @@ func ScrapProxy() []string {
 	return output
 }
 
-func CleanIP(dirtyIP string) (cleanIP string) {
 
-	r1, _ := regexp.Compile(`^.......|..$`)
-	cleanIP = r1.ReplaceAllString(dirtyIP, "")
-	fmt.Println(cleanIP)
-	return
-}
 
 func main() {
 	//creating the proxyURL
